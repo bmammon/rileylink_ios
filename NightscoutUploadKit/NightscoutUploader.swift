@@ -56,7 +56,7 @@ public class NightscoutUploader {
         components.host = siteURL.host
         components.port = siteURL.port
         components.queryItems = queryItems
-        components.path = path
+        components.path = siteURL.path + path
         return components.url
     }
 
